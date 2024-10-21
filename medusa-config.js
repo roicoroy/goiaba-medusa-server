@@ -67,23 +67,20 @@ const plugins = [
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
       autoRebuild: true,
-      develop: {
-        open: process.env.OPEN_BROWSER !== "false",
-      },
       serve: true,
       autoRebuild: true,
       backend: "https://goiaba-medusa-server.onrender.com",
       path: "/app",
       outDir: "build",
-      develop: {
-        open: true,
-        port: 7001,
-        host: "https://goiaba-medusa-server.onrender.com",
-        logLevel: "error",
-        stats: "normal",
-        allowedHosts: "auto",
-        webSocketURL: undefined,
-      },
+      // develop: {
+      //   open: true,
+      //   port: 7001,
+      //   host: "http://localhost",
+      //   logLevel: "error",
+      //   stats: "normal",
+      //   allowedHosts: "auto",
+      //   webSocketURL: undefined,
+      // },
     },
   },
 ];
